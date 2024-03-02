@@ -68,7 +68,6 @@ func (s *UsersHandler) UpdateUser(c *gin.Context) {
 	var details struct {
 		Firstname *string `json:"firstname"`
 		Lastname  *string `json:"lastname"`
-		Bio       *string `json:"bio"`
 		AvatarURL *string `json:"avatar_url"`
 	}
 
@@ -102,9 +101,6 @@ func (s *UsersHandler) UpdateUser(c *gin.Context) {
 	}
 	if details.Lastname != nil {
 		user.Lastname = *details.Lastname
-	}
-	if details.Bio != nil {
-		user.Bio = *details.Bio
 	}
 	if details.AvatarURL != nil {
 		user.AvatarURL = *details.AvatarURL

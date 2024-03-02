@@ -56,7 +56,6 @@ func CreateUser(
 		Email:           email,
 		Password:        string(hash),
 		Role:            role,
-		IsVerified:      true,
 		VerifiedAt:      time.Now(),
 		IsEmailVerified: true,
 	}

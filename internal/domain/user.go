@@ -13,12 +13,9 @@ type User struct {
 	Password        string         `gorm:"not null"                               json:"-"`
 	Phone           *string        `gorm:"unique;"                                json:"phone"`
 	Firstname       string         `                                              json:"first_name"`
-	Othernames      string         `                                              json:"other_names"`
 	Lastname        string         `                                              json:"last_name"`
-	Bio             string         `                                              json:"bio,"`
 	AvatarURL       string         `                                              json:"avatar_url"`
 	Role            Role           `                                              json:"role"`
-	IsVerified      bool           `                                              json:"is_verified"`
 	IsEmailVerified bool           `                                              json:"is_email_verified"`
 	LastLoggedInAt  time.Time      `                                              json:"last_logged_in_at"`
 	VerifiedAt      time.Time      `                                              json:"verified_at"`

@@ -10,6 +10,9 @@ production ready auth service with gin server and gorm orm
 - POST `/auth/user/signup`
 - POST `/auth/user/signin`
 - POST `/auth/admin/sigin`
+- POST `/auth/refresh`
+- POST `/auth/email-verify/request`
+- POST `/auth/email-verify/confirm`
 - GET, POST `/users`
 - GET, PATCH, DELETE `/users/:id`
 
